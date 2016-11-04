@@ -29,6 +29,7 @@ class Layer(object):
         self.number = layer_no
         self.density = random.uniform(params_dict['min_rho'], params_dict['max_rho'])
         self.velocity = random.uniform(params_dict['min_vel'], params_dict['min_vel'])
+        self.mu = 1
         self.upper_interface = interface_depths[layer_no - 1]
         self.lower_interface = interface_depths[layer_no]
 
